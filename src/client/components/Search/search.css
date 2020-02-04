@@ -22,7 +22,7 @@
 }
 
 .ui-lib-search {
-  background: url("./icon.png") no-repeat;
+  /* background: url("./icon.png") no-repeat; */
   background-size: contain;
   background-color: white;
   background-blend-mode: multiply;

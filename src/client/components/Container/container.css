@@ -1,0 +1,14 @@
+
+.container {
+  display: flex;
+}
+
+.container__side-bar {
+  width: 20%;
+  background: bisque;
+}
+
+.container__main {
+  width: 80%;
+  background: blueviolet;
+}
