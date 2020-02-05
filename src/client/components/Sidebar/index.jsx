@@ -1,4 +1,5 @@
 import React from 'react';
+import CheckboxGroup from '../CheckboxGroup';
 import './sidebar.css';
 
 const Sidebar = (props) => {
@@ -29,7 +30,7 @@ const Sidebar = (props) => {
           </select>
         </div>
       </div>
-      <div className="side-bar__check-group">check-group</div>
+      <div className="side-bar__check-group"><CheckboxGroup /></div>
     </div>
   );
 }
