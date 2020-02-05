@@ -12,3 +12,8 @@
   width: 80%;
   background: blueviolet;
 }
+
+.container__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
