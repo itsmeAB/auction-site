@@ -1,6 +1,6 @@
 import React from "react"
 import defaultImage from './TopCap.png';
-import './card.css';
+import './card.scss';
 
 // props => type: 'live', 'new', 'eligible', title
 const Card = () => {
