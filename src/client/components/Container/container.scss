@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+
+  &__side-bar {
+    width: 20%;
+  }
+
+  &__main {
+    width: 80%;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    background: #ffffff;
+    color: #00B16E;
+    width: 100%;
+    margin: 40px 0;
+    border: 1px solid #00B16E;
+    border-radius: 4px;
+    height: 44px;
+    box-shadow: 0px 3px 0px 1px #efeaea;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar';
 import Card from '../Card';
-import './container.css';
+import './container.scss';
 
 const Container = () => {
   const cardItems = ['card1', 'card2', 'card3'];
@@ -14,6 +14,7 @@ const Container = () => {
         <div className="container__card-wrapper">
           {cardItems.map(card => <Card />)}
         </div>
+        <button type="button" className="container__button" onClick={() => { }}>Load more</button>
       </div>
     </div>
   );

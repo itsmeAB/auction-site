@@ -41,66 +41,22 @@
     margin: 10px 20px;
   }
 
-  &__price {
+  &__group {
     position: relative;
     margin: 10px 20px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background: #f1f2f4;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      margin-top: -10px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
 
-.ui-lib-card__img img {
-  min-width: 100px;
-  max-width: 270px;
-  max-height: 192px;
-}
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.ui-lib-card__tag-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 20px;
-}
-
-.ui-lib-card__tag {
-  color: green;
-  background: #a0dcbb;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  box-shadow: 0px 3px 4px 0px #928e8e;
-  text-transform: uppercase;
-}
-
-.ui-lib-card__text {
-  color: #0081b5;
-  font-size: 17px;
-}
-
-.ui-lib-card__title {
-  position: relative;
-  margin: 10px 20px;
-}
-
-.ui-lib-card__price {
-  position: relative;
-  margin: 10px 20px;
-}
-
-.ui-lib-card__price::before {
-  position: absolute;
-  content: "";
-  background: #f1f2f4;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  margin-top: -10px;
+  &__hr {
+    margin: 1rem;
+  }
 }

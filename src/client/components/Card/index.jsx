@@ -18,10 +18,35 @@ const Card = () => {
       </div>
       </div>
       <div className="ui-lib-card__title">
-      Original iPhone Boxes By Apple Liquidation Lot
+        Original iPhone Boxes By Apple Liquidation Lot
       </div>
-      <div className="ui-lib-card__price">
-        Current Bid MSRP Units
+      <hr className="ui-lib-card__hr" />
+      <div className="ui-lib-card__group">
+        <div className="ui-lib-card__price">
+          <div className="ui-lib-card__price-value">
+            $200
+        </div>
+          <div className="ui-lib-card__price-label">
+            Current Bid
+        </div>
+        </div>
+        <div className="ui-lib-card__price">
+          <div className="ui-lib-card__price-value">
+            $500
+        </div>
+          <div className="ui-lib-card__price-label">
+            MSRP
+        </div>
+        </div>
+        <div className="ui-lib-card__price">
+          <div className="ui-lib-card__price-value">
+            20
+        </div>
+          <div className="ui-lib-card__price-label">
+            Units
+        </div>
+        </div>
+
       </div>
       <div className="ui-lib-card__action">
         <div>View auction</div><div>Watch</div>
