@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from '../../components/Search';
-import { Form, FormControl, Button, Navbar, NavDropdown, Nav } from 'react-bootstrap';
-import './header.css';
+import Button from '../Button';
+import './header.scss';
 
 const Header = (props) => {
   return (
@@ -20,7 +20,10 @@ const Header = (props) => {
       <div className="header">
         <div className="header__logo">Logo</div>
         <div className="header__search"><Search placeholder="       Search something" /></div>
-        <div className="header__button-group">Button-group</div>
+        <div className="header__button-group">
+          <Button label="Sign In" uiType="primary" />
+          <Button label="Sign Up" uiType="secondary" />
+        </div>
       </div>
     </>
   )

@@ -1,0 +1,30 @@
+.ui-lib-button {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #00B16E;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: 0px 2px 2px 0px #8c8585;
+
+  &-primary {
+    color: #00B06E;
+    background: #ffffff;
+  }
+
+  &-secondary {
+    color: white;
+    background: #00B06E;
+  }
+
+  &-tertiary {
+    color: white;
+    background: #00A9EC;
+    border-color: #01A2EC;
+  }
+
+  &-light {
+    color: black;
+    background: white;
+    border-color: #b2ceb8;
+  }
+}
