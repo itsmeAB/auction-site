@@ -15,6 +15,7 @@ const Sidebar = (props) => {
         </label>
         <div className="side-bar__select-group">
           <select>
+            <option>$Min</option>
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -22,6 +23,7 @@ const Sidebar = (props) => {
             <option>4</option>
           </select>
           <select>
+            <option>$Max</option>
             <option>10</option>
             <option>100</option>
             <option>200</option>
