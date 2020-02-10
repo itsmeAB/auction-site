@@ -1,10 +1,16 @@
-import React from 'react';
-import Sidebar from '../Sidebar';
-import Card from '../Card';
-import './container.scss';
+import React from "react"
+import Sidebar from "../Sidebar"
+import Card from "../Card"
+import "./container.scss"
 
 const Container = () => {
-  const cardItems = ['card1', 'card2', 'card3'];
+  const cardItems = [
+    { id: "1", buttons: [{ label: "View Auction", uiType: "secondary" },
+    { label: "Watch", uiType: "light" }] },
+    { id: "2", buttons: [{ label: "View Auction", uiType: "secondary" },
+    { label: "Watch", uiType: "light" }] },
+    { id: "3", buttons: [{ label: "Sold", uiType: "tertiary" }] },
+  ]
   return (
     <div className="container">
       <div className="container__side-bar">
@@ -30,12 +36,18 @@ const Container = () => {
           </div>
         </div>
         <div className="container__card-wrapper">
-          {cardItems.map(card => <Card />)}
+          {cardItems.map(card => (
+            <Card
+            buttons = {card.buttons}
+            />
+          ))}
         </div>
-        <button type="button" className="container__button" onClick={() => { }}>Load more</button>
+        <button type="button" className="container__button" onClick={() => {}}>
+          Load more
+        </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default Container;
+export default Container
