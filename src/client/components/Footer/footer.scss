@@ -1,0 +1,13 @@
+.ui-lib-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  th,
+  td {
+    min-width: 100px;
+    border-right: 10px solid transparent;
+    font-size: 14px;
+    padding-right: 94px;
+  }
+}
