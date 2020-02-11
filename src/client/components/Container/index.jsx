@@ -1,15 +1,18 @@
 import React from "react"
 import Sidebar from "../Sidebar"
 import Card from "../Card"
-import "./container.scss"
+import TopCap1 from './TopCap1.png';
+import TopCap2 from './TopCap2.png';
+import TopCap3 from './TopCap3.png';
+import "./container.scss";
 
 const Container = () => {
   const cardItems = [
     { id: "1", buttons: [{ label: "View Auction", uiType: "secondary" },
-    { label: "Watch", uiType: "light" }] },
+    { label: "Watch", uiType: "light" }], imgSrc: TopCap1 },
     { id: "2", buttons: [{ label: "View Auction", uiType: "secondary" },
-    { label: "Watch", uiType: "light" }] },
-    { id: "3", buttons: [{ label: "Sold", uiType: "tertiary" }] },
+    { label: "Watch", uiType: "light" }], imgSrc: TopCap2 },
+    { id: "3", buttons: [{ label: "Sold", uiType: "tertiary" }], imgSrc: TopCap3 },
   ]
   return (
     <div className="container">
@@ -39,6 +42,7 @@ const Container = () => {
           {cardItems.map(card => (
             <Card
             buttons = {card.buttons}
+            imgSrc = {card.imgSrc}
             />
           ))}
         </div>

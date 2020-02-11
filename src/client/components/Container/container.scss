@@ -1,5 +1,10 @@
 .container {
   display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   &__side-bar {
     width: 20%;
@@ -7,11 +12,12 @@
 
   &__main {
     width: 80%;
+    margin-left: 5%;
   }
 
   &__card-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__button {
@@ -65,4 +71,23 @@
     color: #8A94A6;
   }
 
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media(max-width: 1080px) {
+  .container__card-wrapper {
+    justify-content: none;
+    flex-wrap: wrap;
+  }
 }

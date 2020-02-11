@@ -1,16 +1,15 @@
 import React from "react"
-import defaultImage from './TopCap.png';
 import Button from '../Button';
 import './card.scss';
 
 // props => type: 'live', 'new', 'eligible', title
 const Card = (props) => {
-  const { buttons } = props;
+  const { buttons, imgSrc } = props;
 
   return (
     <div className="ui-lib-card">
       <div className="ui-lib-card__img">
-        <img src={defaultImage} alt="" />
+        <img src={imgSrc} alt="" />
       </div>
       <div className="ui-lib-card__tag-wrapper">
         <div className="ui-lib-card__tag">
